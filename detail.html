@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>공지상제</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>공지상세보기</h2>
+        <p></p>
+        <form method="POST">
+
+            <div class="form-group">
+                <label for="id">아이디:</label>
+                <input type="text" class="form-control" id="id" name="id" value="<%= data.id%>" disabled>
+            </div>
+
+            <div class="form-group"> 
+                <label for="name">공지제목 :</label>
+                <input type="text" class="form-control" id="title" name="title" value="<%= data.title%>" disabled>
+            </div>
+            <div class="form-group">
+                <label for="num">작성자</label>
+                <input type="text" class="form-control" id="name" name="name" value="<%= data.name%>" disabled>
+            </div>
+            <div class="form-group">
+                <label for="section">내용</label>
+                <input type="text" class="form-control" id="content" name="content" value="<%= data.content%>" disabled>
+            </div>
+            <!-- <button type="submit" class="btn btn-success">수정하기</button> -->
+        </form>
+    </div>
+
+</body>
+
+</html>
